@@ -1,0 +1,78 @@
+.header {
+    position: fixed; /* Esto hace que el header se quede fijo en la parte superior */
+    right: 0;
+    top: 0;
+    z-index: 100; /* Esto hace que el header se muestre por encima */
+    width: 100%;
+    display: flex; /* Esto hara que los elementos se pongan en linea */
+    align-items: center; /* Centra verticalmente */
+    justify-content: space-between;  /* Que los elementos se separen */
+    padding: 15px 3%;
+    background-color: transparent;
+}
+
+.navlist {
+    display: flex; /* Esto sirve para que los elementos de la lista UL se pongan en linea */
+}
+
+.navlist a {
+    margin-left: 60px; /* Esto es para separar las palabras */
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 3px solid transparent; /* Este es un subrayado transparente */
+    transition: all .5s ease 0s; /* Este es para animar todas las caracteristicas del .navlist a */
+}
+
+.navlist a:hover {
+    border-bottom: 3px solid white; /* Este es un subrayado blanco que aparecera cuando hacemos hover o encima del mouse */
+}
+
+#menu-icon {
+    display: none; /* Esto lo pongo en none para que solo se vea cuando la pagina este colapsada de forma horizontal */
+}
+
+#menu-icon {
+    font-size: 40px;
+    z-index: 101; /* Para que este sobre el header */
+    cursor: pointer; /* Para que aparezca la manita cuando ponemos el mouse encima */
+}
+
+#menu-toggle{
+    display: none; /* Esto es nunca quiero que se vea el checkbox */
+
+}
+
+
+@media (max-width: 768px){
+    .menu-icon-action {
+        display: block;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navlist {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 200px;
+        height: 180px;
+        background-color: #034f7594;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+        transition: all .5s ease;
+    }
+
+    .navlist a {
+ 
+        display: block;
+        margin: 7px 0;
+    }
+
+    #menu-toggle:checked + label.menu-icon-action + ul{
+        right: 0
+    }
+}
