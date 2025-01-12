@@ -24,9 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"/>
        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
       </body>
     </html>
