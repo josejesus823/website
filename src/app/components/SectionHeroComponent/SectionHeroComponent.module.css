@@ -161,7 +161,46 @@
   }
 
 @media (max-width: 992px) {
+  .section {
+    padding: 0 3%;
+    transition: .2s;
+  }
+
+  .hero-text {
+    padding: 0 10%;
+    margin-left: 5%;
+  }
+
   .hero-img {
     text-align: center;
   }
+
+  .hero-text p {
+    font-size: 70%;
+  }
+
+  
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  .hero-text h4{
+    display: block;
+    margin-left: -20%;
+  }
+
+  .hero-img {
+    margin: 0;
+  }
+
+  .hero {
+    height: 100%;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+
 }

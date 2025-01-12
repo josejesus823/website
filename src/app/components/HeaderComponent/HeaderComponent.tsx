@@ -3,7 +3,7 @@ const HeaderComponent = () => {
   return (
     <header className={styles.header}>
         <input type="checkbox" name="checkbox" id={styles['menu-toggle']} />
-        <label htmlFor="menu-toggle" className={styles['menu-icon-action']}>
+        <label htmlFor={styles['menu-toggle']} className={styles['menu-icon-action']}>
             <div className='bx bx-menu' id={styles['menu-icon']}></div>
         </label>
 

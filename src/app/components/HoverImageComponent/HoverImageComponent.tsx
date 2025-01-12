@@ -14,6 +14,7 @@ const HoverImageComponent = ({src}: UrlImage) => {
                 alt='jose vargas foto'
                 width={600}
                 height={0}
+                priority
             />
         </>
     )

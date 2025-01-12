@@ -42,6 +42,10 @@
 
 }
 
+.menu-icon-class {
+    display: none;
+}
+
 
 @media (max-width: 768px){
     .menu-icon-action {
@@ -67,7 +71,6 @@
     }
 
     .navlist a {
- 
         display: block;
         margin: 7px 0;
     }
